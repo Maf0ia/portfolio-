@@ -1,0 +1,40 @@
+{
+  "name": "elevator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cybersecurity-themed portfolio with interactive HUD",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:production": "NODE_ENV=production next build",
+    "start:production": "NODE_ENV=production next start",
+    "security:check": "npm audit",
+    "security:fix": "npm audit fix",
+    "clean": "rm -rf .next out",
+    "analyze": "ANALYZE=true next build",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.34.3",
+    "gsap": "^3.15.0",
+    "lucide-react": "^0.575.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
