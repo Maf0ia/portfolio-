@@ -14,6 +14,9 @@ export const HUDLayout = ({ children, terminal }: { children: React.ReactNode, t
 
     return (
         <div className="relative h-screen w-full bg-background overflow-hidden crt flex flex-col p-4 gap-4">
+            <div className="absolute inset-0 bg-gradient-radial from-neon-cyan/5 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-neon-cyan/10 blur-[120px] rounded-full pointer-events-none" />
+
             {/* Background Packet Stream */}
             <PacketStream />
 
@@ -22,7 +25,8 @@ export const HUDLayout = ({ children, terminal }: { children: React.ReactNode, t
 
             {/* HUD Header */}
             <header className="h-14 border-hud bg-black/80 flex items-center justify-between px-6 shrink-0 z-20 backdrop-blur-xl relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neon-cyan/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/5 via-transparent to-neon-green/5" />
+                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neon-cyan/50 to-transparent animate-pulse" />
                 
                 <div className="flex items-center gap-6">
                     <div className="flex items-center gap-4">
@@ -85,18 +89,23 @@ export const HUDLayout = ({ children, terminal }: { children: React.ReactNode, t
 
                 {/* Main Content Area */}
                 <main className="flex-1 border-hud bg-black/60 relative overflow-hidden flex flex-col backdrop-blur-md">
+                    <div className="absolute inset-0 bg-gradient-to-b from-neon-cyan/3 via-transparent to-transparent pointer-events-none" />
                     <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neon-cyan/40 to-transparent" />
                     <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-neon-cyan/20 to-transparent" />
+                    <div className="absolute left-0 top-0 h-full w-[1px] bg-gradient-to-b from-neon-cyan/20 via-neon-cyan/40 to-neon-cyan/20" />
+                    <div className="absolute right-0 top-0 h-full w-[1px] bg-gradient-to-b from-neon-cyan/20 via-neon-cyan/40 to-neon-cyan/20" />
 
                     <div className="flex-1 overflow-auto p-8 relative z-10 scrollbar-hide">
                         {children}
                     </div>
 
                     {/* Decorative Corner Accents */}
-                    <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-neon-cyan/60" />
-                    <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-neon-cyan/60" />
-                    <div className="absolute top-0 right-0 w-4 h-4 border-t border-r border-neon-cyan/20" />
-                    <div className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-neon-cyan/20" />
+                    <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-neon-cyan/60" />
+                    <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-neon-cyan/60" />
+                    <div className="absolute top-0 right-0 w-6 h-6 border-t border-r border-neon-cyan/30" />
+                    <div className="absolute bottom-0 left-0 w-6 h-6 border-b border-l border-neon-cyan/30" />
+                    <div className="absolute top-4 right-4 w-2 h-2 bg-neon-cyan/40 rounded-full animate-pulse" />
+                    <div className="absolute bottom-4 left-4 w-2 h-2 bg-neon-green/40 rounded-full animate-pulse" />
                 </main>
             </div>
 

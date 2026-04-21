@@ -31,8 +31,6 @@ export const IdentityNode = () => {
                     <div className="mt-4 flex flex-col gap-2">
                         <span className="text-xs font-bold text-neon-cyan bg-neon-cyan/10 px-3 py-1 border-l-2 border-neon-cyan uppercase tracking-widest">AGENT: MAFIA</span>
                         <span className="text-[10px] text-gray-500 font-medium uppercase tracking-[0.2em]">STATUS: [OPERATIONAL]</span>
-
-                        {/* 24/7 Discord Status */}
                         <div className="mt-2 flex items-center gap-2 bg-neon-green/5 border border-neon-green/20 px-3 py-1.5">
                             <div className="w-2 h-2 bg-neon-green rounded-full live-pulse" />
                             <MessageCircle size={12} className="text-neon-green" />
@@ -66,7 +64,7 @@ export const IdentityNode = () => {
                     <div className="about-section space-y-4 text-gray-300 font-light leading-relaxed max-w-2xl text-[15px]">
                         <p>
                             I am <span className="text-neon-cyan font-bold">Mafia</span>, an 18-year-old Full-Stack Developer and Cybersecurity Researcher based in Egypt.
-                            With 7 years of hands-on experience in the software industry, I've mastered the art of building, breaking, and securing digital environments.
+                            With 7 years of hands-on experience, I specialize in building high-performance applications, reverse engineering, and developing advanced multi-language systems.
                         </p>
                         <p>
                             I specialize in <span className="text-neon-red font-bold">reverse engineering</span>, <span className="text-neon-green font-bold">malware analysis</span>,
@@ -83,25 +81,25 @@ export const IdentityNode = () => {
             <section className="skills-grid grid md:grid-cols-2 gap-6">
                 <ProfileStat
                     title="LANGUAGES.DB"
-                    items={["Python", "C#", "C++", "Java", "Dart", "TypeScript", "JavaScript", "PHP", "HTML/CSS","Rust"]}
+                    items={["Python", "C#", "C++", "Java", "Dart", "TypeScript", "JavaScript", "PHP", "HTML/CSS", "Rust"]}
                     icon={<Terminal size={18} className="text-neon-cyan" />}
                     tooltip="Active programming languages"
                 />
                 <ProfileStat
                     title="FRAMEWORKS.SO"
-                    items={["Flutter", "Node.js", "FastAPI", "Next.js", "React", "TailwindCSS"]}
+                    items={["Flutter", "React Native", "Node.js", "FastAPI", "Next.js", "React", "PyTorch", "TailwindCSS"]}
                     icon={<Zap size={18} className="text-neon-amber" />}
                     tooltip="Frameworks and libraries"
                 />
                 <ProfileStat
                     title="CYBERSEC.EXP"
-                    items={["Pentesting", "Reverse Engineering", "Malware Analysis", "RAT Development", "Exploit Research", "Cracking"]}
+                    items={["Pentesting", "Reverse Engineering", "Malware Analysis", "DLL Development", "Exploit Research", "Packet Injection"]}
                     icon={<Shield size={18} className="text-neon-red" />}
                     tooltip="Offensive security expertise"
                 />
                 <ProfileStat
                     title="OPERATIONS.TYPE"
-                    items={["Discord Tooling", "Android Modding", "Cross-Platform Mobile", "Game Hacking", "Trojan Dev"]}
+                    items={["AI/ML Development", "Discord Tooling", "Cross-Platform Apps", "Multi-Language Systems", "Network Optimization"]}
                     icon={<Globe size={18} className="text-neon-green" />}
                     tooltip="Operational specialties"
                 />

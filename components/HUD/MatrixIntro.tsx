@@ -135,8 +135,14 @@ export const MatrixIntro = () => {
                 >
                     <canvas ref={canvasRef} className="matrix-canvas absolute inset-0 opacity-40 matrix-mask" />
 
-                    {/* Radial gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/50 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-radial from-neon-cyan/10 via-transparent to-black/80 pointer-events-none" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-cyan/5 blur-[100px] rounded-full pointer-events-none" />
+
+                    {/* Corner brackets */}
+                    <div className="absolute top-12 left-12 w-24 h-24 border-l-2 border-t-2 border-neon-cyan/30" />
+                    <div className="absolute top-12 right-12 w-24 h-24 border-r-2 border-t-2 border-neon-cyan/30" />
+                    <div className="absolute bottom-12 left-12 w-24 h-24 border-l-2 border-b-2 border-neon-cyan/30" />
+                    <div className="absolute bottom-12 right-12 w-24 h-24 border-r-2 border-b-2 border-neon-cyan/30" />
 
                     <div className="relative z-10 flex flex-col items-center">
                         <motion.div
@@ -146,13 +152,17 @@ export const MatrixIntro = () => {
                         >
                             {loadingText}
                         </motion.div>
-                        <div className="progress-container w-64 md:w-80 h-1.5 bg-gray-900 overflow-hidden rounded-full border border-neon-cyan/20">
+                        <div className="progress-container w-64 md:w-80 h-1.5 bg-gray-900 overflow-hidden rounded-full border border-neon-cyan/30 backdrop-blur-sm">
                             <motion.div
                                 initial={{ width: 0 }}
                                 animate={{ width: "100%" }}
                                 transition={{ duration: 6, ease: "linear" }}
                                 className="progress-bar h-full bg-gradient-to-r from-neon-cyan via-neon-cyan to-neon-green shadow-[0_0_10px_#00f3ff] origin-left rounded-full"
                             />
+                        </div>
+                        
+                        <div className="mt-4 text-[10px] text-neon-cyan/40 font-mono tracking-widest">
+                            SYSTEM_VERSION: 3.0.1 | BUILD: 2026.04.21
                         </div>
                         
                         {/* Decorative corner accents */}
