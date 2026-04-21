@@ -57,7 +57,7 @@ export const IdentityNode = () => {
                             <div className="text-[8px] text-gray-500 font-bold tracking-widest uppercase">PROJECTS</div>
                         </div>
                         <div className="text-center border border-hud bg-black/40 px-4 py-2">
-                            <AnimatedCounter target={9} duration={1} className="text-2xl font-bold text-neon-cyan glow-cyan" />
+                            <AnimatedCounter target={10} duration={1} className="text-2xl font-bold text-neon-cyan glow-cyan" />
                             <div className="text-[8px] text-gray-500 font-bold tracking-widest uppercase">LANGUAGES</div>
                         </div>
                     </div>
